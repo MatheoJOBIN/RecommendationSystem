@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  color-extractor:
+    build: ./color
+    dockerfile: ./color/Dockerfile
+  download:
+    build: ./download
+    dockerfile: ./download/Dockerfile
+  exif:
+    build: ./exif
+    dockerfile: ./exif/Dockerfile
+  favorites:
+    build: ./favorites
+    dockerfile: ./favorites/Dockerfile
+  tags:
+    build: ./tags
+    dockerfile: ./tags/Dockerfile
+  visualization_fav:
+    build: ./visualization_fav
+    dockerfile: ./visualization_fav/Dockerfile
+  visualization_gen:
+    build: ./visualization_gen
+    dockerfile: ./visualization_gen/Dockerfile
+volumes:
+  data:
